@@ -1,1 +1,0 @@
-pass init "docker"
