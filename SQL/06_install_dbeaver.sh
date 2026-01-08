@@ -6,4 +6,4 @@ paru -S dbeaver
 
 # 3. （可选）安装数据库驱动（如 PostgreSQL）
 # DBeaver 会自动下载，但可提前装本地驱动加速
-sudo pacman -S postgresql-libs
+# sudo pacman -S postgresql-libs
