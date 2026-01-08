@@ -1,18 +1,13 @@
-version: '3.8'
-
 services:
   postgres:
-    image: postgres                # 使用 PostgreSQL 15 镜像
-    container_name: postgres_db       # 容器名称
+    image: postgres:15
+    container_name: postgres_db
     environment:
-      POSTGRES_USER: root             # 设置用户名为 'root'
-      POSTGRES_PASSWORD: 123456       # 设置密码为 '123456'
-      POSTGRES_DB: demo               # 设置数据库名为 'demo'
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: demo
     ports:
-      - "5433:5432"                   # 将容器的 5432 端口映射到主机的 5433 端口
+      - "5433:5432"
     volumes:
-      - /opt/docker-data/postgresql:/var/lib/postgresql/data  # 数据映射到主机指定路径
-
-volumes:
-  postgres_data:
-
+      # 👇 改成你的家目录路径（使用绝对路径！）
+      - /home/matchaeggtart/Workspace/SQL/postgres-data:/var/lib/postgresql/data
