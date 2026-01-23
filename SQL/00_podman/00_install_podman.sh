@@ -1,1 +1,1 @@
-sudo pacman -Sy podman podman-compose
+sudo pacman -Syy podman podman-compose runc nftables podman-desktop
