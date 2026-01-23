@@ -9,5 +9,6 @@ cd PostgreSQL
 
 # 从脚本所在目录复制 docker-compose.yml
 cp "$SCRIPT_DIR/postgresql.yml" ./docker-compose.yml
+cp "$SCRIPT_DIR/.env" ./.env
 
 docker compose up -d
