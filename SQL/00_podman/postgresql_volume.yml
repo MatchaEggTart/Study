@@ -18,7 +18,9 @@ services:
       # 我嫌名字太长了
       - data:/var/lib/postgresql # 修改这里
     networks:
-      - postgres-net
+      # - postgres-net
+      # 也是名字太长了
+      - net
 
 volumes:
   # 这里必须对应services里面的volumes
@@ -27,6 +29,8 @@ volumes:
   data:
 
 networks:
-  postgres-net:
+  # 自定义名字，要对应services里面的networks
+  # postgres-net:
+  net:
     driver: bridge
 
